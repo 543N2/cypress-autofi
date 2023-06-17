@@ -1,0 +1,9 @@
+# Dependency directory
+node_modules
+cypress/videos
+cypress/screenshots
+
+# Logs
+logs
+*.log
+

@@ -1,0 +1,17 @@
+{
+  "name": "cypress-zygmus",
+  "version": "1.0.0",
+  "description": "Test automation challenge in Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Juan Saenz",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  }
+}
