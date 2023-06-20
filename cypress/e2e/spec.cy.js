@@ -52,7 +52,7 @@ describe('Interaction with IFrames', () => {
     cy.log('"About us" page validated.')
 
 
-    // gets page URL attempt
+    // gets page URL
     cy.log('Getting page URL...')
     cy.get('@innerIFrame')
       .invoke('attr', 'src')
