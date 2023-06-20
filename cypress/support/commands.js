@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.overwrite('log', (originalFn, message, options) => {
+    const logMessage = `[Log] ${message}`;
+  
+    cy.readFile('cypress/fixtures/logs.txt').then((existingContent) => {
+      const updatedContent = existingContent + logMessage + '\n';
+  
+      cy.writeFile('cypress/fixtures/logs.txt', updatedContent);
+    });
+  
+    originalFn(message, options);
+  });
+  
